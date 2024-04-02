@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+.audio-background {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #18181B;
+}
+
+.navigator {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+    transition: all .3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.2);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+  
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #5487ff;
+    transition: all .3s ease;
+}
+  
+.link a:hover::after{
+    width: 80%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #5487ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: #1d3f8f;
+    transform: scale(1.05);
+}
+
+.container {
+    background-image: url(../gallery/furina_background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #5487ff;
+    z-index: -100;
+}
+  
+header {
+    position: relative;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+  
+header .content h2 {
+    color: rgb(17, 14, 14);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+  
+header .content h2 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(17, 14, 14);
+}
+  
+header .image {
+    position: relative;
+    max-width: 500px;
+    max-height: 425px;
+    overflow:hidden;
+    border-radius: 50%;
+    backdrop-filter: blur(1px);
+}
+  
+header .image:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+  
+header .image img{
+    max-width: 400px;
+    margin: auto;
+}
+
+.images {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+}
